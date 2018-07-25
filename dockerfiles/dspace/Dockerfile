@@ -4,6 +4,6 @@ ENV DSPACE_GIT https://github.com/DSpace/DSpace.git
 
 WORKDIR /app
 
-ADD * /app
+ADD * /app/
 RUN ls -l
-RUN find . -print
+RUN find /app -print
